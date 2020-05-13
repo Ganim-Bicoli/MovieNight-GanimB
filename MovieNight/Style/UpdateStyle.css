@@ -1,0 +1,184 @@
+﻿body {
+    background-color: #060B16;
+}
+.Bild1 {
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    width: 250px;
+    top:10%;
+}
+.Bild2 {
+    height: 300px;
+    position: absolute;
+    left: 63%;
+    top:10%;
+    width: 450px;
+}
+#UpdateInfo {
+    font-size: 35px;
+    font-family: 'Tw Cen MT';
+    color: white;
+    left:40%;
+    top:40%;
+    position:absolute;
+    width:400px;
+
+}
+
+#ListStyle {
+    list-style: none;
+}
+
+.textBox{
+    height:20px;
+}
+
+li {
+    font-size: 20px;
+    font-family: 'Tw Cen MT';
+    color: white;
+    padding-bottom: 30px;
+}
+
+#DivPos{
+    position:absolute;
+    top:10%;
+    left:15%;
+}
+
+
+
+.Update {
+    position: absolute;
+    top: 72%;
+    left: 108%;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Tw Cen MT';
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.navBar {
+    top: 0%;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    border-right: 1px solid #32A2E2;
+    box-shadow: 3px 5px 8px -3px #2DCAEF;
+    overflow-x: hidden;
+    left: -5px;
+    z-index: 0;
+}
+
+    .navBar > .myClass {
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        font-family: 'Tw Cen MT';
+    }
+
+    .navBar a:hover {
+        background-color: #1AACFF;
+        box-shadow: 2px 1px 8px #43B6F9;
+    }
+
+.DisplayUser {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 220px;
+    z-index: 5;
+}
+
+    .DisplayUser > p {
+        position: relative;
+        left: 35%;
+        top: 40px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Tw Cen MT';
+    }
+
+    .DisplayUser > img {
+        height: 50%;
+        position: relative;
+        left: 23%;
+        top: 40px;
+    }
+
+#hrLine2 {
+    position: relative;
+    width: 80%;
+    top: 40px;
+    background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .Bild1 {
+        display:none;
+    }
+
+    .Bild2 {
+        display:none;
+    }
+    #UpdateInfo {
+        font-size: 30px;
+        font-family: 'Tw Cen MT';
+        color: white;
+        left: 60%;
+        top: 10%;
+        position: absolute;
+        width: 300px;
+    }
+.navBar {
+    top: 0%;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    border-right: 1px solid #32A2E2;
+    box-shadow: 3px 5px 8px -3px #2DCAEF;
+    overflow-x: hidden;
+    left: -5px;
+    z-index: 0;
+}
+    .Bild1 {
+        height: 200px;
+        position: absolute;
+        left: 65%;
+        width: 150px;
+        top: 10%;
+    }
+
+    .Bild2 {
+        height: 200px;
+        position: absolute;
+        left: 55%;
+        top: 40%;
+        width: 350px;
+    }
+    #DivPos {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+    }
+    .Update {
+        position: absolute;
+        top: 40%;
+        left: 80%;
+        width: 200px;
+        font-size: 25px;
+        font-family: 'Tw Cen MT';
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        color: red;
+        font-weight: bold;
+    }
+}

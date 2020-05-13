@@ -1,0 +1,43 @@
+﻿@model MovieNight.PictureTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/JavaScript/searchbarJS.js"></script>
+    <link href="~/Style/displayChoicecss.css" rel="stylesheet" />
+    <link href="~/Style/navbar.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="shadowBackground" onclick="BackToChoice()"></p>
+    @Html.ActionLink("TILLBAKA", "Index", "Home",null, new { @class = "rundKnapp3" })
+    <img id="bakgrundbild" src="@Url.Content(Model.Background_Smal)" alt="bild">
+    <img id="bakgrundbild2" src="@Url.Content(Model.Background_Big)" alt="bild">
+    <iframe id="ytLink" src="https://www.youtube.com/embed/@Html.DisplayFor(s => Model.YoutubeLink)">test</iframe> @*i displayfor skickas youtube länk ID.*@ 
+
+    <div id="divFilmInfo">
+        <p id="ptitle">@Html.DisplayFor(s => Model.MovieTable.Title)</p>
+        <ol>
+            <li><p id="pAr">@Html.DisplayFor(s => Model.MovieTable.Year)</p></li>
+            <li><p id="pGengre">@Html.DisplayFor(s => Model.MovieTable.Genre)</p></li>
+            <li> <p id="pLjud">@Html.DisplayFor(s => Model.MovieTable.Sound)</p></li>
+            <li> <p id="pResolution">@Html.DisplayFor(s => Model.MovieTable.Quality)</p></li>
+        </ol>
+
+        <p id="pDescription">@Html.DisplayFor(s => Model.MovieTable.Description)</p>
+        <p id="rundKnapp1" onclick="ShowTrailer()">SE FILM</p>
+        <p id="rundKnapp2">TITTA SENARE</p>
+        <p id="pFilmLangd">Length: @Html.DisplayFor(s => Model.MovieTable.Length)</p>
+        <p id="pDirector"><span style="font-weight: bold">Director:</span> @Html.DisplayFor(s => Model.MovieTable.Director)</p>
+        <p id="pCast"><span style="font-weight: bold">Cast:</span> @Html.DisplayFor(s => Model.MovieTable.Cast)</p>
+
+
+    </div>
+</body>
+</html>

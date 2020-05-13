@@ -1,0 +1,39 @@
+﻿@model MovieNight.Models.UserLogIn
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Style/UserLogin.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> @*jQuery funktion*@
+        <script src="~/JavaScript/jQuery.js"></script>
+        <img id="MovieBackground" src="~/Image/LoginBackground.png" alt="Alternate Text" />
+    </div>
+    <div id="loginDiv">
+        @using (Html.BeginForm())
+        {
+            <h1 id="welcome">Welcome to Movie Night</h1>
+            <hr id="hrLine"/>
+            <p id="pSignIn">Please Sign in to your account</p>
+            <div id="loginInfo">
+                <div id="txtUsername">Användarnamn</div>
+                <div>@Html.TextBoxFor(x => Model.username, null, new { @class = "Username"})</div>
+                <div id="txtPassword">Password</div>
+                <div>@Html.TextBoxFor(x => Model.password, null, new { @class = "Password" })</div>
+
+                <input type="submit" name="name" value="Logga In" />
+                <p id="pForgot">Forgotten password?</p>
+            </div>
+        }
+
+    </div>
+</body>
+</html>

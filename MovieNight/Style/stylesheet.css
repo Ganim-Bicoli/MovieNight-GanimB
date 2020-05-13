@@ -1,0 +1,105 @@
+﻿#divBild1 > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+    #divBild1 > ul > li {
+        margin: 0%;
+        padding-left: 30px;
+        float: left;
+    }
+
+        #divBild1 > ul > li > img {
+            height: 240px;
+        }
+
+    #divBild1 > ul > h1 {
+        color: white;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    #divBild1 > ul > li > img:hover {
+    }
+
+
+
+#divBild2 > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+
+    #divBild2 > ul > li {
+        margin: 0%;
+        padding-left: 30px;
+        float: left;
+    }
+
+    #divBild2 > ul > h1 {
+        color: white;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    #divBild2 > ul > li > img {
+        height: 240px;
+    }
+
+#divBild3 > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 65%;
+    top: 5%;
+}
+
+    #divBild3 > ul > div {
+        margin: 0%;
+        padding-top: 5%;
+    }
+
+    #divBild3 > ul > h1 {
+        color: white;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    #divBild3 > ul > div > li > img {
+        height: 140px;
+    }
+
+#minHead {
+    margin: 0px;
+    font-size: 22px;
+    color: white;
+}
+
+#minDisc {
+    margin: 0px;
+    width: 300px;
+    font-size: 14px;
+    color: white;
+    height: 50px;
+}
+
+#divBild3 > ul > div > li > p {
+    color: white;
+}
+
+#divBild3 > ul > div > li > img {
+    height: 140px;
+}
+
+
+body {
+    background-color: #262323;
+}

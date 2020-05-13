@@ -1,0 +1,244 @@
+﻿
+#divBild1 > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 10px;
+    left: 14%;
+    top: 10%;
+    width: 80%;
+}
+    #divBild1 > ul > li {
+        margin-left: 30px;
+        margin-top: 20px;
+        float: left;
+        height: 340px;
+        width: 210px;
+        background-color: #131520;
+    }
+
+        #divBild1 > ul > li > a > img {
+            height: 220px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+#pRaiting {
+    height: 19px;
+    width: 30px;
+    background-color: #FFB10C;
+    color: #111C41;
+    font-family: 'Tw Cen MT';
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    left: 43%;
+    top: -13%;
+}
+
+#divBild1 > ul > li > #pTitle {
+    color: white;
+    position: relative;
+    font-size: 17px;
+    font-family: 'Tw Cen MT';
+    text-align: center;
+    top: 195px;
+}
+
+#divBild1 > ul > li > ol {
+    list-style: none;
+    background-color: orange;
+    margin: 0px;
+    padding: 0px;
+}
+
+    #divBild1 > ul > li > ol > li {
+        float: left;
+        position: relative;
+        top: 190px;
+        left: 35px;
+        padding-right: 30px;
+    }
+
+        #divBild1 > ul > li > ol > li > p {
+            color: #27C4FF;
+            position: relative;
+            font-size: 14px;
+            text-align: center;
+            font-family: 'Tw Cen MT';
+        }
+
+#divBild1 > ul > h1 {
+    color: white;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 180px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.50);
+        color: white;
+        text-align: left;
+        border-radius: 2px;
+        padding: 5px 0;
+        transition: transform 0.4s;
+        position: absolute;
+        float: left;
+        z-index: 1;
+        top: -5px;
+        left: 196px;
+    }
+
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+
+#divBild1 > ul > li > a > img:hover {
+    transition: transform 0.4s;
+    transform: scale(1.1);
+    display: block;
+}
+
+body {
+    background-color: #060B16;
+}
+
+#BildMindre {
+    width: 175px;
+    height: 10px;
+}
+
+#pDeleteText {
+    font-family: 'Tw Cen MT';
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    top: -5px;
+    position: absolute;
+    left: 17%;
+}
+
+#blueBar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0px;
+    background-color: #32A2E2;
+}
+
+
+
+body {
+    font-family: 'Tw Cen MT'
+}
+
+.navBar {
+    top: 7%;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    border-right: 1px solid #32A2E2;
+    box-shadow: 3px 5px 8px -3px #2DCAEF;
+    overflow-x: hidden;
+    left: -5px;
+    z-index: 0;
+}
+
+    .navBar > .myClass {
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        font-family: 'Tw Cen MT';
+    }
+
+    .navBar a:hover {
+        background-color: #1AACFF;
+        box-shadow: 2px 1px 8px #43B6F9;
+    }
+
+.DisplayUser {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 220px;
+    z-index: 5;
+}
+
+    .DisplayUser > p {
+        position: relative;
+        left: 35%;
+        top: 40px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Tw Cen MT';
+    }
+
+    .DisplayUser > img {
+        height: 50%;
+        position: relative;
+        left: 23%;
+        top: 40px;
+    }
+
+#hrLine2 {
+    position: relative;
+    width: 80%;
+    top: 40px;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    #divBild1 > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        padding-top: 10px;
+        left: 23%;
+        top: 7%;
+    }
+
+        #divBild1 > ul > li {
+            margin-left: 13px;
+            margin-top: 40px;
+            float: left;
+            height: 340px;
+            width: 210px;
+            background-color: #131520;
+        }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+
+        .tooltip .tooltiptext {
+            display: none;
+        }
+
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+}

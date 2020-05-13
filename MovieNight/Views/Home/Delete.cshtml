@@ -1,0 +1,65 @@
+﻿@model MovieNight.PictureTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/displayChoice.css" rel="stylesheet" />
+    <title>Delete</title>
+</head>
+<body>
+    <div id="divBild1">
+        <ul>
+            <li>
+
+                <a class="tooltip">
+                    <img id="BildMindre" src="@Url.Content(Model.Background_Big)" />
+                    <p class="tooltiptext">
+                        @Html.DisplayFor(x => Model.MovieTable.Description)
+                    </p>
+                </a>
+                <p id="pRaiting">@Html.DisplayFor(x => Model.MovieTable.Raiting)</p>
+                <p id="pTitle">@Html.DisplayFor(x => Model.MovieTable.Title)</p>
+
+                <ol>
+
+                    <li><p>@Html.DisplayFor(x => Model.MovieTable.Year)</p></li>
+                    <li><p>@Html.DisplayFor(x => Model.MovieTable.Quality)</p></li>
+                    <li><p>@Html.DisplayFor(x => Model.MovieTable.Genre)</p>
+                </ol>
+            </li>
+
+        </ul>
+        <p id="pDelteText">
+            Are you sure you want to <span style="color:red;">DELETE</span> this movie?
+            Once the movie is deleted it is <span style="color:red;">GONE PERMANENTLY </span> and can not be recoverd.
+        </p>
+        @using (Html.BeginForm())
+        {
+            <input type="submit" value="Delete" class="Delete" />
+        }
+    </div>
+    <div class="navBar">
+        <div class="DisplayUser">
+            <img src="~/Image/UserPic.png" alt="Alternate Text" />
+            <p id="demo">Admin</p>
+            <hr id="hrLine2" />
+        </div>
+        @Html.ActionLink("Home", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("New releases", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Trending", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Coming soon", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Series", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Movies", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Home", "Index", "Home", new { @class = "myClass" })
+        <br />
+        @Html.ActionLink("Create", "create", "Filuppladdning", null, new { @class = "myClass" })
+        @Html.ActionLink("Update", "movieIDupdate", "Home", null, new { @class = "myClass" })
+        @Html.ActionLink("Delete", "movieIDdelete", "Home", null, new { @class = "myClass" })
+    </div>
+</body>
+</html>

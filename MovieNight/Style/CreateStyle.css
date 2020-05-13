@@ -1,0 +1,187 @@
+﻿body {
+    background-color: #060B16;
+}
+
+#ListStyle {
+    list-style: none;
+}
+
+.textBox {
+    height: 20px;
+}
+
+li {
+    font-size: 20px;
+    font-family: 'Tw Cen MT';
+    color: white;
+    padding-bottom: 30px;
+}
+
+#DivPos {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+}
+
+
+.navBar {
+    top: 0%;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    border-right: 1px solid #32A2E2;
+    box-shadow: 3px 5px 8px -3px #2DCAEF;
+    overflow-x: hidden;
+    left: -5px;
+    z-index: 0;
+}
+
+    .navBar > .myClass {
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Tw Cen MT';
+        color: white;
+        display: block;
+    }
+
+    .navBar a:hover {
+        background-color: #1AACFF;
+        box-shadow: 2px 1px 8px #43B6F9;
+    }
+
+
+.Create {
+    position: absolute;
+    top: 112%;
+    left: 152%;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Tw Cen MT';
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#pInfoBox {
+    position: absolute;
+    left: 50%;
+    width: 600px;
+    top: 55%;
+    color: white;
+    font-size: 55px;
+    font-family: 'Tw Cen MT';
+}
+
+#ExempelBild {
+    position: absolute;
+    left: 50%;
+    top:5%;
+    height: 40%;
+    width:40%;
+}
+#showExample {
+    position: absolute;
+    left:50%;
+    top:42%;
+    width:600px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Tw Cen MT';
+}
+.navBar {
+    top: 0%;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    border-right: 1px solid #32A2E2;
+    box-shadow: 3px 5px 8px -3px #2DCAEF;
+    overflow-x: hidden;
+    left: -5px;
+    z-index: 0;
+}
+
+    .navBar > .myClass {
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        font-family: 'Tw Cen MT';
+    }
+
+    .navBar a:hover {
+        background-color: #1AACFF;
+        box-shadow: 2px 1px 8px #43B6F9;
+    }
+
+.DisplayUser {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 220px;
+    z-index: 5;
+}
+
+    .DisplayUser > p {
+        position: relative;
+        left: 35%;
+        top: 40px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Tw Cen MT';
+    }
+
+    .DisplayUser > img {
+        height: 50%;
+        position: relative;
+        left: 23%;
+        top: 40px;
+    }
+
+#hrLine2 {
+    position: relative;
+    width: 80%;
+    top: 40px;
+    background-color: white;
+}
+@media screen and (max-width: 900px) {
+    #DivPos {
+        position: absolute;
+        top: 0%;
+        left: 25%;
+    }
+
+    .Create {
+        position: absolute;
+        top: 30%;
+        left: 80%;
+        width: 200px;
+        font-size: 25px;
+        font-family: 'Tw Cen MT';
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #pInfoBox {
+        position: absolute;
+        left: 65%;
+        width: 300px;
+        top: 0%;
+        color: white;
+        font-size: 35px;
+        font-family: 'Tw Cen MT';
+    }
+    #ExempelBild {
+        display:none;
+    }
+
+    #showExample {
+        display:none;
+    }
+}

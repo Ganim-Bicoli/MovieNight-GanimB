@@ -1,0 +1,90 @@
+﻿@model List<MovieNight.PictureTable> 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Style/Homemeny2.css">
+    <script src="~/JavaScript/searchbarJS.js"></script>
+    <link href="~/Style/navbar.css" rel="stylesheet" />
+    <title>Index</title>
+    <script>getLocation();</script>
+</head>
+
+<body>
+    <div id="divBannerBild">
+        <img src="~/Image/bannerPic.png" alt="Alternate Text" />
+        <div id="BlackBarDiv">
+            <p id="pBarTitle">La casa de papel</p>
+            <p id="pBarDescription">Eight robbers take hostages and lock themselves in the Royal Spanish Mint, while the man behind the coup manipulates the police into carrying out his plan.</p>
+            <p id="pBarRaiting">9.2</p>
+            <p></p>
+        </div>
+    </div>
+    
+    <div id="divBild1">
+        <ul>
+            @for (int i = 0; i < Model.Count; i++)    //loopar igenom tabellen fylld med information om filer och visar upp dem beroende på Model.Count.
+            {
+                <li>
+                    <a class="tooltip" href="@Url.Action("Index","DisplayChoice", new {id=Model[i].Id })">
+                        <img id="BildMindre" src="@Url.Content(Model[i].Background_Big)" />
+                        <p class="tooltiptext">
+                            @Html.DisplayFor(x => Model[i].MovieTable.Description)
+                        </p>
+                    </a>
+                    <p id="pRaiting">@Html.DisplayFor(x => Model[i].MovieTable.Raiting)</p>
+                    <p id="pTitle">@Html.DisplayFor(x => Model[i].MovieTable.Title)</p>
+
+                    <ol>
+
+                        <li><p>@Html.DisplayFor(x => Model[i].MovieTable.Year)</p></li>
+                        <li><p>@Html.DisplayFor(x => Model[i].MovieTable.Quality)</p></li>
+                        <li><p>@Html.DisplayFor(x => Model[i].MovieTable.Genre)</p>
+                    </ol>
+                </li>
+            }
+        </ul>
+    </div>    
+    <div class="navBar">
+        <div class="DisplayUser">
+            <img src="~/Image/UserPic.png" alt="Alternate Text" />
+            <p id="demo">Admin</p>
+            <hr id="hrLine2" />
+        </div>
+        @Html.ActionLink("Home", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("New releases", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Trending", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Coming soon", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Series", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Movies", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Home", "Index", "Home", new { @class = "myClass" })
+        <br />
+        @Html.ActionLink("Create", "create", "Filuppladdning", null, new { @class = "myClass" })
+        @Html.ActionLink("Update", "movieIDupdate", "Home", null, new { @class = "myClass" })
+        @Html.ActionLink("Delete", "movieIDdelete", "Home", null, new { @class = "myClass" })
+    </div>
+
+    <div class="searchBar">
+        <p id="pYear">Year</p>
+        <p id="pQuality">Quality</p>
+        <p id="pGenre">Genre</p>
+
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            <div class="diven">
+                <p>@Html.TextBox("Year", null, new { @class = "searchBarRuta" })</p>
+
+                <p>@Html.TextBox("Quality", null, new { @class = "searchBarRuta" })</p>
+
+                <p>@Html.TextBox("Genre", null, new { @class = "searchBarRuta" })</p>
+                <input type="submit" value="Search" class="Search" />
+            </div>
+        }
+    </div>
+</body>
+</html>

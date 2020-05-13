@@ -1,0 +1,262 @@
+﻿
+#divBannerBild > img {
+        width: 88%;
+        margin: 0;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 12%;
+        z-index:1;
+}
+
+#BlackBarDiv {
+    width: 400px;
+    height: 270px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    top: -40px;
+    left: 60%;
+    z-index:2;
+}
+
+#pBarTitle {
+    color: white;
+    font-family: 'Tw Cen MT';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#pBarDescription {
+    color: white;
+    font-family: 'Tw Cen MT';
+    font-size: 18px;
+}
+
+#pBarRaiting {
+    color: white;
+    font-family: 'Tw Cen MT';
+    font-size: 18px;
+}
+
+
+#divBild1 > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-top: 10px;
+    left: 14%;
+    top: 39%;
+    width:80%;
+
+}
+
+#divBild1 > ul > li {
+        margin-left: 30px;
+        margin-top:20px;
+        float: left;
+        height: 340px;
+        width: 210px;
+        background-color: #131520;
+}
+
+#divBild1 > ul > li > a > img {
+            height: 220px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+}
+
+#pRaiting {
+    height: 19px;
+    width: 30px;
+    background-color: #FFB10C;
+    color: #111C41;
+    font-family: 'Tw Cen MT';
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    left: 43%;
+    top: -13%;
+}
+
+#divBild1 > ul > li > #pTitle {
+    color: white;
+    position: relative;
+    font-size: 17px;
+    font-family: 'Tw Cen MT';
+    text-align: center;
+    top: 195px;
+}
+
+#divBild1 > ul > li > ol {
+    list-style: none;
+    background-color: orange;
+    margin: 0px;
+    padding: 0px;
+}
+
+#divBild1 > ul > li > ol > li {
+        float: left;
+        position: relative;
+        top: 190px;
+        left: 35px;
+        padding-right: 30px;
+}
+
+#divBild1 > ul > li > ol > li > p {
+            color: #27C4FF;
+            position: relative;
+            font-size: 14px;
+            text-align: center;
+            font-family: 'Tw Cen MT';
+}
+
+#divBild1 > ul > h1 {
+    color: white;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+        visibility: hidden;
+        width: 180px;
+        height: 200px;
+        background-color: rgba(1, 1, 1, 0.80);
+        color: white;
+        text-align: left;
+        border-radius: 2px;
+        padding: 15px 0;
+        transition: transform 0.4s;
+        position: absolute;
+        float: left;
+        z-index: 1;
+        top: -15px;
+        left: 204px;
+}
+
+
+.tooltip:hover .tooltiptext {
+        visibility: visible;
+}
+
+
+#divBild1 > ul > li > a > img:hover {
+    transition: transform 0.4s;
+    transform: scale(1.1);
+    display: block;
+}
+
+
+#minHead {
+    margin: 0px;
+    font-size: 22px;
+    color: white;
+}
+
+#minDisc {
+    margin: 0px;
+    width: 300px;
+    font-size: 14px;
+    color: white;
+    height: 50px;
+}
+
+
+
+body {
+    background-color: #040a16;
+}
+
+#BildMindre {
+    width: 175px;
+    height: 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    #divBannerBild {
+        position: relative;
+        left: -10px;
+        width: 102%;
+        top: -10px;
+    }
+
+        #divBannerBild > img {
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            height: 233px;
+            top: 0;
+            left: 0;
+        }
+
+
+
+    #BlackBarDiv {
+        position: absolute;
+        width: 300px;
+        height: 233px;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0%;
+        left: 60%;
+    }
+
+    #pBarTitle {
+        color: white;
+        font-family: 'Tw Cen MT';
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #pBarDescription {
+        color: white;
+        font-family: 'Tw Cen MT';
+        font-size: 15px;
+    }
+
+    #pBarRaiting {
+        color: white;
+        font-family: 'Tw Cen MT';
+        font-size: 18px;
+    }
+
+    #divBild1 > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        padding-top: 10px;
+        left: 23%;
+        top: 32%;
+    }
+        #divBild1 > ul > li {
+            margin-left: 13px;
+            margin-top: 40px;
+            float: left;
+            height: 340px;
+            width: 210px;
+            background-color: #131520;
+        }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+
+        .tooltip .tooltiptext {
+            display:none;
+        }
+
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+}
+

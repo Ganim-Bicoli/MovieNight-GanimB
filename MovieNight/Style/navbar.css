@@ -1,0 +1,234 @@
+﻿
+.navBar {
+    top: 0px;
+    height: 140%;
+    width: 220px;
+    position: absolute;
+    border-right: 1px solid #32A2E2;
+    box-shadow: 3px 5px 8px -3px #2DCAEF;
+    overflow-x: hidden;
+    left: 0px;
+    z-index: 1;
+    background-color: #0E0F14;
+}
+
+    .navBar > .myClass {
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-family: 'Tw Cen MT';
+        display: block;
+    }
+
+    .navBar a:hover {
+        background-color: #1AACFF;
+        box-shadow: 2px 1px 8px #4352f9;
+    }
+
+
+
+.searchBar {
+    position: absolute;
+    width: 89%;
+    height: 70px;
+    background-color: #06122E;
+    top: 27.8%;
+    left: 11%;
+    z-index: 0;
+    box-shadow: 3px 2px 20px -3px rgba(60, 162, 220, 0.68);
+}
+
+
+
+.diven > p{
+       
+        float:left;
+        height: 50px;
+        width: 200px;
+        padding-right:5%;
+
+}
+
+.searchBarRuta {
+    position: relative;
+    top: 15px;
+    left: 100px;
+    height: 30px;
+    width: 100px;
+    background-color: #030A1C;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Nirmala UI';
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1.5px solid black;
+    font-size: 25px;
+    
+
+}
+
+
+#pYear {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    top: -16px;
+    position: absolute;
+    left: 8%;
+    font-family: 'Nirmala UI';
+}
+#pQuality {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    top: -16px;
+    position: absolute;
+    left: 24%;
+    font-family: 'Nirmala UI';
+}
+#pGenre {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    top: -16px;
+    position: absolute;
+    left: 41%;
+    font-family: 'Nirmala UI';
+}
+.Search {
+    position: relative;
+    width: 80px;
+    left: 5%;
+    background-color: white;
+    top: 31px;
+    font-size: 20px;
+    font-family: 'Tw Cen MT';
+    height: 30px;
+    border: none;
+    color: black;
+}
+
+.DisplayUser{
+    position:relative;
+    top:-20px;
+    width:100%;
+    height:220px;
+    z-index:5;
+}
+
+.DisplayUser > p {
+        position: relative;
+        left: 35%;
+        top: 40px;
+        font-size:20px;
+        color: white;
+        font-family: 'Tw Cen MT';
+}
+
+.DisplayUser > img {
+        height:50%;
+        position:relative;
+        left:23%;
+        top:40px;
+}
+
+#hrLine2{
+    position:relative;
+    width:80%;
+    top:40px;
+    background-color:white;
+}
+
+
+@media screen and (max-width: 900px) {
+    .navBar {
+        top: 224px;
+        height: 100%;
+        width: 200px;
+        position: relative;
+        border-right: 1px solid #32A2E2;
+        box-shadow: 3px 5px 8px -3px #2DCAEF;
+        overflow-x: hidden;
+        left: -15px;
+        z-index: 1;
+    }
+    .searchBar {
+        position: relative;
+        width: 78.9%;
+        height: 70px;
+        background-color: #06122E;
+        top: -635px;
+        left: 21.6%;
+        z-index: 0;
+    }
+    .diven > p {
+        float: left;
+        height: 50px;
+        width: 200px;
+        padding-right: 0%;
+    }
+
+
+
+    .searchBarRuta {
+        position: relative;
+        top: 15px;
+        left: 10px;
+        height: 30px;
+        width: 100px;
+        background-color: #030A1C;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Nirmala UI';
+        border: none;
+        border-radius: 3px;
+        font-size: 25px;
+        z-index:2;
+    }
+
+    #pYear {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 16px;
+        top: -16px;
+        position: absolute;
+        left: 6%;
+        font-family: 'Nirmala UI';
+    }
+
+    #pQuality {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        top: -16px;
+        position: absolute;
+        left: 34%;
+        font-family: 'Nirmala UI';
+    }
+
+    #pGenre {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        top: -16px;
+        position: absolute;
+        left: 63%;
+        font-family: 'Nirmala UI';
+    }
+    .Search {
+        position: absolute;
+        width: 80px;
+        left: 85%;
+        top: 30%;
+        font-size: 25px;
+        font-family: 'Tw Cen MT';
+        height: 30px;
+        border: none;
+        color: black;
+        font-weight: bold;
+    }
+
+}

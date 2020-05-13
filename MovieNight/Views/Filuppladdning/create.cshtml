@@ -1,0 +1,66 @@
+﻿@model MovieNight.PictureTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/CreateStyle.css" rel="stylesheet" />
+    <title>create</title>
+</head>
+<body>
+    <img src="~/Image/ExempelCreate.png" alt="Alternate Text" id="ExempelBild" />
+    <p id="showExample">This is what it will look like.</p>
+    <p id="pInfoBox">Please fill information in each and every one of the text boxes.</p>
+    <div id="DivPos">
+        @using (Html.BeginForm("update", "Filuppladdning", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.HiddenFor(m => Model.MovieTable.Id) //Måste skicka med ID, skickas i hiddenfor så ID inte kan ändras.
+            @Html.HiddenFor(m => Model.FilmId)
+            <ol id="ListStyle">
+                <li>Title @Html.TextBoxFor(m => Model.MovieTable.Title, new { @class = "textBox" })</li>
+                <li>Year @Html.TextBoxFor(m => Model.MovieTable.Year, new { @class = "textBox" })</li>
+                <li>Genre @Html.TextBoxFor(m => Model.MovieTable.Genre, new { @class = "textBox" })</li>
+                <li>Sound @Html.TextBoxFor(m => Model.MovieTable.Sound, new { @class = "textBox" })</li>
+                <li>Quality @Html.TextBoxFor(m => Model.MovieTable.Quality, new { @class = "textBox" })</li>
+                <li>Description @Html.TextBoxFor(m => Model.MovieTable.Description, new { @class = "textBox" })</li>
+                <li>Length @Html.TextBoxFor(m => Model.MovieTable.Length, new { @class = "textBox" })</li>
+                <li>Director @Html.TextBoxFor(m => Model.MovieTable.Director, new { @class = "textBox" })</li>
+                <li>
+                    @Html.LabelFor(x => Model.Background_Big, new { @class = "control-label col-md-2" })
+                    <input type="file" name="thePicture" value="Välj Fil" />
+                </li>
+                <li>
+                    @Html.LabelFor(x => Model.Background_Smal, new { @class = "control-label col-md-2" })
+                    <input type="file" name="thePicture2" value="Välj Fil" />
+                </li>
+                <li>Youtube Link @Html.TextBoxFor(m => Model.YoutubeLink, new { @class = "textBox" })</li>
+                <li>Raiting @Html.TextBoxFor(m => Model.MovieTable.Raiting, new { @class = "textBox" })</li>
+            </ol>
+            <input type="submit" value="Create Movie" class="Create" />
+        }
+    </div>
+
+    <div class="navBar">
+        <div class="DisplayUser">
+            <img src="~/Image/UserPic.png" alt="Alternate Text" />
+            <p id="demo">Admin</p>
+            <hr id="hrLine2" />
+        </div>
+        @Html.ActionLink("Home", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("New releases", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Trending", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Coming soon", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Series", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Movies", "Index", "Home", new { @class = "myClass" })
+        @Html.ActionLink("Home", "Index", "Home", new { @class = "myClass" })
+        <br />
+        @Html.ActionLink("Create", "create", "Filuppladdning", null, new { @class = "myClass" })
+        @Html.ActionLink("Update", "movieIDupdate", "Home", null, new { @class = "myClass" })
+        @Html.ActionLink("Delete", "movieIDdelete", "Home", null, new { @class = "myClass" })
+    </div>
+</body>
+</html>
